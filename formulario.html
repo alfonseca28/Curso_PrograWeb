@@ -4,42 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style_formulario.css" />
     <title>Formulario</title>
   </head>
+
   <body>
-    <h1>Mi formulario</h1>
-    <form action="" method="post">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" value="Introduce tu nombre" />
-      <br /><br />
-      <label for="apellido">Apellido</label>
-      <input type="text" value="Introduce tu apellido" id="apellido" />
-      <br /><br />
-      <label for="comentario">Comentario</label>
-      <br /><br />
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <br /><br />
-      <label for="Contraseña">Contraseña</label>
-      <input
-        type="password"
-        placeholder="Introduce tu contraseña"
-        id="contraseña"
-      />
-      <br /><br />
-      <label for="correo">Correo</label>
-      <input type="email" placeholder="aronalfon@gmail.com" />
-      <br /><br />
-      <label for="web">Introduce url</label>
-      <input type="url" placeholder="https:/www.duckduckgo.com" />
-      <br /><br />
-      <label for="">Numero</label>
-      <input type="number" value="10" min="0" max="25" step="3" />
-      <br /><br />
-      <input type="range" value="10" min="0" max="25" step="3" />
-      <br /><br />
-      <label for="checkboc">Checkbox</label>
-      <input type="checkbox" />
-      <br /><br />
-    </form>
+    <!--  MENU  -->
+    <div id="menu">
+      <img src="img/logo.png" width="40" />
+      <a href="index.html">Inicio</a>
+      <a href="">Citas</a>
+      <a href="formulario.html">Contacto</a>
+      <a href="">Nosotros</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <br /><br />
+    <img src="img/perro.png" width="500" />
+
+    <!--  FORMULARIO  -->
+    <div id="formulario">
+      <h1 class="caja titulo">Formulario para adoptar</h1>
+      <form class="caja campos">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" />
+        <label for="">Apellido</label>
+        <input type="text" />
+        <label for="">Dirección</label>
+        <textarea name="direccion" cols="30" rows="10"></textarea>
+        <label for="">Fecha de adopción</label>
+        <input type="date" name="fecha" />
+        <label for="">Perro a Adoptar</label>
+        <select name="perro">
+          <option value="">Doki</option>
+          <option value="">Firulais</option>
+          <option value="">Pelusa Caligari</option>
+        </select>
+        <input type="submit" value="Registrate" />
+      </form>
+    </div>
+
+    <div class="clear"></div>
+    <!--  PIE DE PÁGINA  -->
+    <footer>
+      <img src="img/face.png" width="50" />
+      <label for="">Facebook</label>
+      <img src="img/whats.png" width="50" />
+      <label for="">Whats</label>
+    </footer>
   </body>
 </html>

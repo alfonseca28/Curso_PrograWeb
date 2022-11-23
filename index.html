@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Titulo de la pagina -->
-    <title>Inicio</title>
-  </head>
-  <body>
-    <!-- Son 6 tipos de titulo, a forma de jerarquia -->
-    <h1>Inicio</h1>
-    <h2>Titulo</h2>
-    <h3>Otro titulo</h3>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+</head>
 
-    <em>Texto en italica</em>
-    <strong>Texto en negrita</strong>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fondos">
+      <div class="d-flex justify-content-start align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="100" height="24" class="d-inline-block align-text-top mx-3">
+        </a>
+        <div class="d-flex justify-content-evenly align-items-center">
+          <a class="nav-link mx-5 text-light fw-bold" href="index.html">Inicio</a>
+          <a class="nav-link mx-5 text-light fw-bold" href="#">Citas</a>
+          <a class="nav-link mx-5 text-light fw-bold" href="formulario.html">Contacto</a>
+          <a class="nav-link mx-5 text-light fw-bold" href="#">Nosotros</a>
+        </div>
+        <button class="px-4 fs-5 rounded-pill boton border-0">
+          <a class="text-decoration-none text-light" href="login.html">Login</a>
+        </button>
+        <label id="usuario"></label>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Es una division de la pagina -->
+  <!--  PARRAFO  -->
+  <div class="d-flex align-items-center flex-column lavanda">
     <div>
-      <!-- Etiqueta para un parrafo -->
-      <p>
-        Parrafo 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Veritatis maiores <br />
-        exercitationem tenetur non velit dolorem quae quod dolorum cumque
-        excepturi.
-      </p>
-      <!-- La etiqueta br es para hacer un salto de linea -->
+      <img src="img/perrosasomados.png" width="900px" />
     </div>
-    <ul>
-      <!-- La etiqueta ul es para hacer una lista -->
-      <li>Elemento1</li>
-      <li>Elemento2</li>
-      <li>Elemento3</li>
-      <li>Elemento4</li>
-      <li>Elemento5</li>
-    </ul>
-    <ol start="a" type="a">
-      <!-- La etiqueta ol es para una lista ordenada, por defecto empieza con numeros, pero si se quiere cambiar a letras, se puede porner <ol start="a" type="a"> al inicio de la etiqueta-->
-      <li>Elemento1</li>
-      <li>Elemento2</li>
-      <li>Elemento3</li>
-      <li>Elemento4</li>
-      <li>Elemento5</li>
-    </ol>
-    <dl>
-      <!-- La etiqueta dl son para las lista que se requiere tener mas informacion, como un titulo y una descripcion -->
-      <dt>Animales acuaticos</dt>
-      <dd>Pez, tortuga, delfin, tiburon</dd>
-      <dt>Animales terrestres</dt>
-      <dd>Perro, gato, raton, caballo</dd>
-    </dl>
-    <a href="duckduckgo.com">El mejor buscador no es google...</a>
-    <!-- Para que al momento de darle click al link se abra en otra pestaña se debe ocupar target="_blank" -->
-    <img src="" alt="">
-    <a href="duckduckgo.com" target="_blank" >El mejor buscador no es google...</a>
-  </body>
+    <div class="d-flex align-items-center justify-content-around mx-5 px-4">
+      <img src="img/gato.png" width="300px" />
+      <div class="d-flex align-items-center flex-column">
+        <h1 class="fw-bold text-center my-4">¿Sabías que?</h1>
+        <p class="my-4">
+          Los gatos pueden rotar sus orejas 180 grados. Los gatos pueden pasar hasta 14 horas dormidos. Debido a su
+          naturaleza nocturna, los gatos suelen ser mucho más hiperactivos en la tarde. La audición del gato promedio es
+          al menos cinco veces más aguda que la de un adulto humano.
+          Los gatos pueden rotar sus orejas 180 grados. Los gatos pueden pasar hasta 14 horas dormidos. Debido a su
+          naturaleza nocturna, los gatos suelen ser mucho más hiperactivos en la tarde. La audición del gato promedio es
+          al menos cinco veces más aguda que la de un adulto humano.
+        </p>
+        <button class="px-4 fs-5 rounded-pill boton border-0 fw-bold text-light">Adoptame</button>
+      </div>
+    </div>
+  </div>
+
+  <!--  PIE DE PÁGINA  -->
+  <footer class="d-flex fondos align-items-center justify-content-around">
+    <div>
+      <img src="img/face.png" width="50" />
+      <label for="">Facebook</label>
+    </div>
+    <div>
+      <img src="img/whats.png" width="50" />
+      <label for="">Whatsapp</label>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
